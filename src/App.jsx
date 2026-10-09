@@ -3,6 +3,7 @@ import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
 import ScrollToTop from './components/common/ScrollToTop';
 import WhatsAppButton from './components/common/WhatsAppButton';
+import CookieConsent from './components/common/CookieConsent';
 
 // Pages
 import Home from './pages/Home';
@@ -35,6 +36,7 @@ function App() {
       </div>
       <Footer />
       <WhatsAppButton />
+      <CookieConsent />
     </div>
   );
 }
