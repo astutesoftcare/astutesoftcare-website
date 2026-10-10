@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
-import { FaRegCheckCircle, FaHandHoldingHeart, FaChartLine, FaWheelchair } from 'react-icons/fa';
+import { FaRegCheckCircle, FaHandHoldingHeart, FaChartLine } from 'react-icons/fa';
 import PageHeader from '../components/common/PageHeader';
 import UnderstandingNDIS from '../components/home/UnderstandingNDIS';
 import HowItWorks from '../components/home/HowItWorks';
@@ -27,17 +27,6 @@ const fundingCategories = [
       'Improved Living Arrangements',
       'Increased Social & Community Participation',
       'Improved Daily Living Skills'
-    ]
-  },
-  {
-    icon: FaWheelchair,
-    title: 'Capital Supports',
-    description: 'Funding for higher-cost pieces of assistive technology, equipment, and home or vehicle modifications.',
-    items: [
-      'Assistive Technology',
-      'Home Modifications',
-      'Vehicle Modifications',
-      'Specialised Equipment'
     ]
   }
 ];
@@ -75,7 +64,7 @@ const NDISSupport = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto gap-8">
               {fundingCategories.map((category, index) => (
                 <motion.div
                   key={index}
